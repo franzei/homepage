@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #d3d3d3;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 50px;
+  background: linear-gradient(135deg, white, forestgreen);
+  z-index: 1000;
+  border-bottom: 4px solid #f5cb42;
+}
+
+nav .container {
+  height: 100%;
+  max-width: 1100px;
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+li {
+  display: inline-block;
+  padding: 1.2rem 1.5rem 1rem;
+  color: #000;
+}
+
+.knopf {
+  text-decoration: none;
+  border: 3px transparent solid;
+  color: #fff;
+  transition: border-color;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+}
+.knopf:hover {
+  border-bottom-color: #f5cb42;
+}
+
+#home {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.55)),
+    url("./bilder/hinterground.jpeg") center/cover fixed no-repeat;
+  position: relative;
+}
+.banner {
+  font-size: 5rem;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+#Produkte .container {
+  color: #000;
+  width: 85vw;
+  margin: 0 auto;
+}
+.bilder {
+  position: relative;
+  overflow: hidden;
+}
+.texte {
+  position: absolute;
+  font-size: 3rem;
+  bottom: 50px;
+  right: 0;
+  color: #fff;
+  width: 250px;
+  height: 60px;
+  background-color: rgba(0, 100, 0, 0.85);
+  transform: translateX(101%);
+  transition: all 0.6s ease-in;
+}
+
+.bilder:hover .texte {
+  transform: translateX(0);
+}
+
+.bilder:hover {
+  opacity: 0.7;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  font-size: 5rem;
+}
+.header {
+  text-align: center;
+}
+.underline {
+  width: 200px;
+  border: 3px solid green;
+  margin: 2px auto 10px auto;
+}
+
+#Anfahrt .container {
+  width: 80vw;
+  height: 600px;
+  margin: auto;
+  position: relative;
+  top: 50px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 50px;
+}

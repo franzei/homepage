@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <link rel="stylesheet" href="layout.css">
+    <title>Bauernhof</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo"><i class="fa fa-home fa-2x"></i></div>
+            <ul>
+                <li><a href="#home" class="knopf">Home</a></li>
+                <li><a href="#Produkte" class="knopf">Produkte</a></li>
+                <li><a href="#Kontakt" class="knopf">Kontakt</a></li>
+                <li><a href="#Anfahrt" class="knopf">Anfahrt</a></li>
+            </ul>
+
+
+        </div>
+
+    </nav>
+    <section id="home">
+        <div class="banner">Hier Header</div>
+       
+    </section>
+
+    
+    <section id="Produkte">
+        
+        <div class="container">
+            <div class="header">
+                <h2>Produkte ab Hof</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="items">
+                <div class="bilder">
+                    <img src="./bilder/eggs.jpg" alt="eier">
+
+                    <div class="texte">
+                    <p>Eier ab Hof</p>
+                    </div>
+
+
+                </div>
+                <div class="bilder">
+                    <img src="./bilder/holz.jpg" alt="eier">
+                
+                    <div class="texte">
+                        <p>Brennholz</p>
+                    </div>
+                
+                
+                </div>
+                <div class="bilder">
+                    <img src="./bilder/milk.jpg" alt="eier">
+                
+                    <div class="texte">
+                        <p>Milch</p>
+                    </div>
+                
+                
+                </div>
+                <div class="bilder">
+                    <img src="./bilder/kartoffel.jpg" alt="eier">
+                
+                    <div class="texte">
+                        <p>Kartoffel</p>
+                    </div>
+                
+                
+                </div>
+                <div class="bilder">
+                    <img src="./bilder/pumkin.jpg" alt="eier">
+                
+                    <div class="texte">
+                        <p>Kürbisse</p>
+                    </div>
+                
+                
+                </div>
+                <div class="bilder">
+                    <img src="./bilder/roteBeete.jpg" alt="eier">
+                
+                    <div class="texte">
+                        <p>Rüben</p>
+                    </div>
+                
+                
+                </div>
+                
+
+
+            </div>
+        </div>
+
+        
+    </section>
+    <section id="Anfahrt">
+        <div class="container">
+
+            <div id="map"></div>
+        </div>
+       
+    </section>
+
+    <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+   
+    <script defer src="myScript.js"></script>
+</body>
+</html>
