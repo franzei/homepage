@@ -1,4 +1,6 @@
 console.log('Hello')
+const form = getElementById('form2')
+
 
 const url = 'https://www.google.at/maps/@'
 
@@ -25,7 +27,7 @@ map.zoomControl.setPosition('bottomright');
 map.on('click', function(mapEvent) {
     console.log(mapEvent)
 
-})    
+})
 
 },
 
