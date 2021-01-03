@@ -1,5 +1,5 @@
 <?php
-  if (isset($_POST['email']))  {
+  if (isset($_POST['submit']))  {
 
     //Email information
     $admin_email = "franz.r.maier@gmx.at";
